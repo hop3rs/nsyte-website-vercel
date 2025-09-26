@@ -1,0 +1,21 @@
+{
+  "name": "nsyte-recovery-agents",
+  "version": "1.0.0",
+  "description": "Professional surplus funds recovery services website",
+  "main": "dist/index.html",
+  "scripts": {
+    "build": "echo 'Build already completed'",
+    "start": "echo 'Static site - no start command needed'"
+  },
+  "keywords": [
+    "surplus funds",
+    "foreclosure recovery",
+    "real estate",
+    "property recovery"
+  ],
+  "author": "Nsyte Recovery Agents",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
