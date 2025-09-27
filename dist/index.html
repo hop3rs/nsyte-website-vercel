@@ -1,36 +1,398 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nsyte Recovery Agents - Surplus Funds Recovery Experts</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Professional surplus funds recovery services. We help property owners recover unclaimed funds from foreclosure sales. Over $8M recovered for our clients." />
-    <meta name="keywords" content="surplus funds, foreclosure recovery, unclaimed property, real estate recovery, property funds" />
-    <meta name="author" content="Nsyte Recovery Agents" />
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Nsyte Recovery Agents - Surplus Funds Recovery Experts" />
-    <meta property="og:description" content="Professional surplus funds recovery services. Over $8M recovered for our clients." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nsyteagents.com" />
-    <meta property="og:image" content="/nsyte-logo-new.png" />
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nsyte Recovery Agents - Surplus Funds Recovery Experts" />
-    <meta name="twitter:description" content="Professional surplus funds recovery services. Over $8M recovered for our clients." />
-    <meta name="twitter:image" content="/nsyte-logo-new.png" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://nsyteagents.com" />
-    
-    <script type="module" crossorigin src="/assets/index-Dj3O9yfB.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BKFl4fHP.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nsyte Recovery Agents - Surplus Funds Recovery Specialists</title>
+    <meta name="description" content="Professional surplus funds recovery services. We help property owners recover unclaimed funds from foreclosure sales. Free consultation available.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff6b35;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #ff6b35;
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #e55a2b;
+        }
+        
+        main {
+            margin-top: 80px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #ff6b35;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #ff6b35;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: #ff6b35;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .stats {
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat {
+            padding: 1rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff6b35;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .contact {
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            color: white;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-item a {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Nsyte Recovery Agents</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="tel:5043348866" class="cta-button">Call Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Recover Your Surplus Funds</h1>
+                <p>Professional surplus funds recovery specialists helping property owners reclaim unclaimed money from foreclosure sales</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Free Consultation</a>
+                    <a href="tel:5043348866" class="btn-secondary">Call (504) 334-8866</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">💰</div>
+                        <h3>Surplus Funds Recovery</h3>
+                        <p>We specialize in recovering unclaimed surplus funds from foreclosure sales, helping property owners reclaim money that rightfully belongs to them.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📋</div>
+                        <h3>Expert Consultation</h3>
+                        <p>Our experienced team provides free consultations to evaluate your case and determine if you have unclaimed surplus funds waiting to be recovered.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚖️</div>
+                        <h3>Legal Expertise</h3>
+                        <p>With our professional legal team, we handle all the complex paperwork and legal processes required to successfully recover your funds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section stats">
+            <div class="container">
+                <h2>Proven Results</h2>
+                <div class="stats-grid">
+                    <div class="stat">
+                        <span class="stat-number">$8M+</span>
+                        <div class="stat-label">Recovered for Clients</div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <div class="stat-label">Successful Cases</div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Get Your Free Consultation</h2>
+                <p>Contact us today to find out if you have unclaimed surplus funds waiting to be recovered.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <a href="tel:5043348866">(504) 334-8866</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>✉️</span>
+                        <a href="mailto:info@nsyteagents.com">info@nsyteagents.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>🌐</span>
+                        <a href="https://nsyteagents.com">nsyteagents.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nsyte Recovery Agents. All rights reserved. Professional surplus funds recovery services.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
 </html>
